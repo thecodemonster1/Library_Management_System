@@ -13,7 +13,23 @@
             <li id="home" class="bgcolor"><a href="home.html">Home</a></li>
             <li id="LogIn" class="bgcolor"><a href="LogIn.html">LogIn</a></li>
             <li id="SignUp" class="bgcolor"><a href="SignUp.html">SignUp</a></li>
-            <li id="searchIcon"><input type="text" name="search" placeholder="Search"><img src="searchIcon.png"/></li>
+
+            <li class="search">
+                <form action="#" method="get" class="searchForm">
+                    <input type="text" name="search" placeholder="Search">
+                    <label for="searchBy"></label>
+                    <select name="searchBy" id="searchBy">
+                        <option value="">Search By</option>
+                        <option value="SID">SID</option>
+                        <option value="name">name</option>
+                        <option value="Semester">Semester</option>
+                        <option value="cgpa">cgpa</option>
+                    </select>
+                    &nbsp;
+                    <input type="submit" value='Search'>
+                </form>
+
+            </li>
         </ul>
     </div>
 
@@ -27,8 +43,10 @@
 
         </div>
 
-        <h1>SLIIT Academy Student Management System</h1>
 
+        <h1>SLIIT Academy Student Management System</h1>
+        <button id="hide">hide</button>
+        <button id="show">show</button>
 
 
 

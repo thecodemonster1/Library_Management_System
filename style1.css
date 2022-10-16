@@ -97,7 +97,24 @@ li a:hover {
 form > table{
     border: 1px solid black;
     padding: 0px -10px;
+
+
 }
 
+.search{
+    float: right;
+    padding: 7.5px;
+}
 
+#searchIcon{
+    width: 20px;
 
+}
+
+.sem{
+    width: 100px;
+}
+
+.cgpa{
+    width: 70px;
+}

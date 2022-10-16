@@ -24,8 +24,24 @@
         </div>
     </div>
 
-    <form action="#" method="post">
-
+    <form action="#" method="get">
+        <table align="center" style="font-size:1.5em; width: 200px;">
+            <tr><th>Register</th></tr>
+            <tr><td><input type="text" placeholder="Name"></td></tr>
+            <tr><td><input type="text" placeholder="SID"></td></tr>
+            <tr><td>
+                <select>
+                    <option value="">No Center</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Jaffna">Jaffna</option>
+                </select>
+            </td></tr>
+            <tr><td><input type="number" placeholder="Year" min="1" max="3" class="sem"><input type="number" placeholder="Semester" min="1" max="2" class="sem"></td></tr>
+            <tr><td><input type="number" placeholder="cgpa" min="0" max="4" class="cgpa" ></td></tr>
+            <tr><td><input type="email" placeholder="Email"></td></tr>
+            <tr><td><input type="submit" value="Submit"></td></tr>
+        </table>
     </form>
 
 
