@@ -5,6 +5,32 @@
     <link rel="stylesheet" type="text/css" href="style1.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+		$(document).ready(function() {
+			$("h1").hover(function() {
+				$("h1").css('color','#17ff00');
+				$("body").css('background-image','url(images/background1.jpg)');
+				$("body").css("background","size('50%')");
+			}, function() {
+			    $("body").css('background-image','url(images/background2.jpg)');
+				$("h1").css('color','#c7cbc9');
+
+			});
+		});
+
+		$(document).ready(function() {
+			$("h1").hover(function() {
+				$("h1").css('color','#17ff00');
+				$("body").css('background-image','url(images/background1.jpg)');
+				$("body").css("background","size('50%')");
+			}, function() {
+			    $("body").css('background-image','url(images/background2.jpg)');
+				$("h1").css('color','#c7cbc9');
+
+			});
+		});
+
+	</script>
     <title>Home</title>
 </head>
 <body>
@@ -50,7 +76,8 @@
         <br><br>
         <br><br>
         <div class="table" align="center">
-            <button class="tblBtn">Add</button>
+            <a href="SignUp.html"><button class="tblBtn">Add</button></a>
+
             <button class="tblBtn">Update</button>
             <button class="tblBtn">Delete</button>
 
@@ -58,7 +85,7 @@
             <br><br>
             <br><br>
             <br><br>
-            <table>
+            <table id="stdlist">
                 <tr style="background-color: black; color: white;">
                     <th>SID</th>
                     <th>Name</th>
@@ -68,7 +95,9 @@
                     <th>CGPA</th>
                     <th>Email</th>
                 </tr>
-                <script src="js1.js"></script>
+                <tbody>
+                    <script src="js1.js"></script>
+                </tbody>
             </table>
         </div>
 
