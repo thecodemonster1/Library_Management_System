@@ -25,11 +25,13 @@ function onFormSubmit() {
 function readFormData() {
     var formData = {};
     // Get Values From  Input
-    formData["userName"] = document.getElementById("userName").value;
-    formData["sID"] = document.getElementById("sID").value;
-    formData["stdClass"] = document.getElementById("stdClass").value;
-    formData["tsub"] = document.getElementById("tsub").value;
-    formData["age"] = document.getElementById("age").value;
+    formData["name"] = document.getElementById("name").value;
+    formData["sid"] = document.getElementById("sid").value;
+    formData["centre"] = document.getElementById("centre").value;
+    formData["year"] = document.getElementById("year").value;
+    formData["semester"] = document.getElementById("semester").value;
+    formData["cgpa"] = document.getElementById("cgpa").value;
+    formData["email"] = document.getElementById("email").value;
     // return Form Data
     return formData;
 }
@@ -144,4 +146,3 @@ function validate() {
         }
     }
     return isValid;
-}
