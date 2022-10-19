@@ -6,34 +6,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-		$(document).ready(function() {
-			$("h1").hover(function() {
-				$("h1").css('color','#17ff00');
-				$("body").css('background-image','url(images/background1.jpg)');
-				$("body").css("background","size('50%')");
-			}, function() {
-			    $("body").css('background-image','url(images/background2.jpg)');
-				$("h1").css('color','#c7cbc9');
 
-			});
-		});
-
-		$(document).ready(function() {
-			$("h1").hover(function() {
-				$("h1").css('color','#17ff00');
-				$("body").css('background-image','url(images/background1.jpg)');
-				$("body").css("background","size('50%')");
-			}, function() {
-			    $("body").css('background-image','url(images/background2.jpg)');
-				$("h1").css('color','#c7cbc9');
-
-			});
-		});
+    		$(document).ready(function() {
+    			$("#jquery1").hover(function() {
+    				$("h1").css('color','#17ff00');
+    				$("body").css('background-image','url(images/background2.jpg)');
+    				$("body").css("background","size('50%')");
+    			}, function() {
+    			    $("body").css('background-image','url(images/background1.jpg)');
+    			    $("h1").css({
+    			        'font-size': '50px',
+    			        'text-align': 'center'
+    			    });
+    				$("h1").css('color','#c7cbc9');
+    			});
+    		});90yx
 
 	</script>
     <title>Home</title>
 </head>
 <body>
+<script src="js1.js"></script>
     <div class="navbar">
         <ul id="ul1">
             <li id="home" class="bgcolor"><a href="home.html">Home</a></li>
@@ -76,10 +69,14 @@
         <br><br>
         <br><br>
         <div class="table" align="center">
+            <button class="tblBtn" id="jquery1">Hover me</button>
+            <br>
+            <br>
             <a href="SignUp.html"><button class="tblBtn">Add</button></a>
 
             <button class="tblBtn">Update</button>
             <button class="tblBtn">Delete</button>
+
 
 <!--            <button class="tblBtn"></button>-->
             <br><br>
